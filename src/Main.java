@@ -21,6 +21,14 @@ public class Main {
         String dirimageUsed = dirlocal + "/imageUsed";
         String dirimageAfter = dirlocal + "/imageAfter";
 
+        File filecreate;
+        filecreate = new File(dirimageBefore);
+        filecreate.mkdir();
+        filecreate = new File(dirimageUsed);
+        filecreate.mkdir();
+        filecreate = new File(dirimageAfter);
+        filecreate.mkdir();
+
         // check folder.
         String imageName = checkimageBeforeDir(dirimageBefore);
 
